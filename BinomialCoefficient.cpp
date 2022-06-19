@@ -5,7 +5,7 @@ Find NCR through Pascals Traingle
 class Solution{
     int BinomialCoefficient(int N, int r){
         std::vector<std::vector<int>> pascalsTriangle;
-        pascalsTriangle.push_back(std::vector<int>({0}));
+        pascalsTriangle.push_back(std::vector<int>({1}));
         for(int i=1;i<=N;i++){
             std::vector<int> row(i+1,0);
             row[i][0] =1;row[i][i] =1;
